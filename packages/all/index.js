@@ -2,6 +2,6 @@ module.exports = {
   extends: [
     '@brlt/eslint-config-react',
     '@brlt/eslint-config-vue',
-    '@brlt/eslint-config-ts'
+    '@brlt/eslint-config-ts',
   ],
 }

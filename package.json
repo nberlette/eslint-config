@@ -13,14 +13,6 @@
     "packages/*"
   ],
   "description": "Versatile ESLint presets for modern JavaScript/TypeScript projects.",
-  "keywords": [
-    "eslint",
-    "eslint-config",
-    "brlt",
-    "react",
-    "vue",
-    "typescript"
-  ],
   "scripts": {
     "lint": "eslint . 'packages/**/*'",
     "lint:fix": "eslint --fix . 'packages/**/*'",
@@ -44,9 +36,17 @@
       "*.d.ts"
     ]
   },
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "brlt",
+    "react",
+    "vue",
+    "typescript"
+  ],
   "devDependencies": {
-    "@brlt/n": "^0.1.1",
     "@brlt/eslint-config": "workspace:*",
+    "@brlt/n": "^0.1.1",
     "bumpp": "^7.1.1",
     "eslint": "^8.14.0",
     "eslint-plugin-brlt": "workspace:*",

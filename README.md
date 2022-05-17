@@ -63,7 +63,7 @@ The simplest way to integrate this with a project is to use the `eslintConfig` f
 
 ```js [.eslintrc.js]
 module.exports = {
-  "extends": "@brlt"
+  extends: '@brlt'
 }
 ```
 

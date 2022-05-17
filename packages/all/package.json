@@ -11,15 +11,19 @@
   "publishConfig": {
     "access": "public"
   },
+  "description": "Versatile ESLint presets for modern JavaScript/TypeScript projects.",
+  "homepage": "https://github.com/nberlette/eslint-config",
   "repository": {
     "type": "git",
     "url": "https://github.com/nberlette/eslint-config",
     "directory": "packages/all"
   },
-  "homepage": "https://github.com/nberlette/eslint-config",
   "readme": "https://github.com/nberlette/eslint-config#readme",
   "bugs": "http://github.com/nberlette/eslint-config/issues",
-  "description": "Versatile ESLint presets for modern JavaScript/TypeScript projects.",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "keywords": [
     "eslint",
     "eslint-config",
@@ -28,13 +32,6 @@
     "vue",
     "typescript"
   ],
-  "main": "index.js",
-  "files": [
-    "index.js"
-  ],
-  "peerDependencies": {
-    "eslint": ">=7.4.0"
-  },
   "dependencies": {
     "@brlt/eslint-config-react": "workspace:*",
     "@brlt/eslint-config-ts": "workspace:*",
@@ -56,5 +53,8 @@
   "devDependencies": {
     "eslint": "^8.14.0",
     "typescript": "^4.6.4"
+  },
+  "peerDependencies": {
+    "eslint": ">=7.4.0"
   }
 }
