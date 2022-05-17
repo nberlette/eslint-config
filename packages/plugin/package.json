@@ -1,0 +1,36 @@
+{
+  "name": "eslint-plugin-brlt",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": {
+    "name": "Nicholas Berlette",
+    "email": "nick@berlette.com",
+    "url": "https://github.com/nberlette"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npx -y rimraf dist && unbuild",
+    "stub": "unbuild --stub",
+    "test": "vitest",
+    "prepublishOnly": "nr build"
+  },
+  "dependencies": {
+    "@typescript-eslint/utils": "^5.22.0"
+  },
+  "devDependencies": {
+    "unbuild": "^0.7.4",
+    "vitest": "^0.9.4"
+  }
+}

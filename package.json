@@ -1,0 +1,41 @@
+{
+  "name": "@brlt/eslint-config-monorepo",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": {
+    "name": "Nicholas Berlette",
+    "email": "nick@berlette.com",
+    "url": "https://github.com/nberlette"
+  },
+  "private": true,
+  "packageManager": "pnpm@7.1.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "prepare": "pnpm -r run stub",
+    "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish --access public"
+  },
+  "eslintConfig": {
+    "extends": "@brlt",
+    "plugins": ["brlt"],
+    "root": true,
+    "env": {
+      "es6": true,
+      "node": true
+    },
+    "ignorePatterns": [
+      "dist",
+      "node_modules",
+      "*.d.ts"
+    ]
+  },
+  "devDependencies": {
+    "@brlt/eslint-config": "workspace:*",
+    "bumpp": "^7.1.1",
+    "eslint": "^8.14.0",
+    "eslint-plugin-brlt": "workspace:*",
+    "typescript": "^4.6.4"
+  }
+}
