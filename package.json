@@ -1,6 +1,6 @@
 {
   "name": "@brlt/eslint-config-monorepo",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "author": {
     "name": "Nicholas Berlette",
@@ -24,7 +24,9 @@
   },
   "eslintConfig": {
     "extends": "@brlt",
-    "plugins": ["brlt"],
+    "plugins": [
+      "brlt"
+    ],
     "root": true,
     "env": {
       "es6": true,
