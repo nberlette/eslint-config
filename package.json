@@ -1,6 +1,6 @@
 {
   "name": "@brlt/eslint-config-monorepo",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "license": "MIT",
   "author": {
     "name": "Nicholas Berlette",
@@ -17,7 +17,7 @@
     "lint": "eslint . 'packages/**/*'",
     "lint:fix": "eslint --fix . 'packages/**/*'",
     "prepare": "pnpm -r run stub",
-    "bump": "bumpp package.json packages/*/package.json --commit '📦 %s' --push --tag",
+    "bump": "bumpp package.json packages/*/package.json --commit '📦 %s' --all --push --tag",
     "prepublishOnly": "nr lint:fix",
     "publish:npm": "pnpm -r publish --access public",
     "release": "nr bump && nr publish:npm"
