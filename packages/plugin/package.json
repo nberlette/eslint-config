@@ -12,16 +12,36 @@
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "require": "./dist/index.cjs",
-      "import": "./dist/index.mjs",
-      "types": "./dist/index.d.ts"
+      "import": "./dist/index.mjs"
     }
   },
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nberlette/eslint-config",
+    "directory": "packages/plugin"
+  },
+  "homepage": "https://github.com/nberlette/eslint-config",
+  "readme": "https://github.com/nberlette/eslint-config#readme",
+  "bugs": "http://github.com/nberlette/eslint-config/issues",
+  "description": "Versatile ESLint presets for modern JavaScript/TypeScript projects.",
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "brlt",
+    "react",
+    "vue",
+    "typescript"
+  ],
   "scripts": {
-    "build": "npx -y rimraf dist && unbuild",
+    "build": "rm -rf dist && unbuild",
     "stub": "unbuild --stub",
     "test": "vitest",
     "prepublishOnly": "nr build"

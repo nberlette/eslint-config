@@ -10,6 +10,23 @@
   "publishConfig": {
     "access": "public"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nberlette/eslint-config",
+    "directory": "packages/ts"
+  },
+  "homepage": "https://github.com/nberlette/eslint-config",
+  "readme": "https://github.com/nberlette/eslint-config#readme",
+  "bugs": "http://github.com/nberlette/eslint-config/issues",
+  "description": "Versatile ESLint presets for modern TypeScript projects.",
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "brlt",
+    "react",
+    "vue",
+    "typescript"
+  ],
   "main": "index.js",
   "files": [
     "index.js"

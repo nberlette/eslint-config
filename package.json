@@ -12,10 +12,23 @@
   "workspaces": [
     "packages/*"
   ],
+  "description": "Versatile ESLint presets for modern JavaScript/TypeScript projects.",
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "brlt",
+    "react",
+    "vue",
+    "typescript"
+  ],
   "scripts": {
-    "lint": "eslint .",
+    "lint": "eslint . 'packages/**/*'",
+    "lint:fix": "eslint --fix . 'packages/**/*'",
     "prepare": "pnpm -r run stub",
-    "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish --access public"
+    "bump": "bumpp package.json packages/*/package.json --commit --push --tag",
+    "prepublishOnly": "nr lint:fix && pnpm -r exec -- cp ../../README.md .",
+    "publish:npm": "pnpm -r publish --access public",
+    "release": "nr bump && nr publish:npm"
   },
   "eslintConfig": {
     "extends": "@brlt",
@@ -32,6 +45,7 @@
     ]
   },
   "devDependencies": {
+    "@brlt/n": "^0.1.1",
     "@brlt/eslint-config": "workspace:*",
     "bumpp": "^7.1.1",
     "eslint": "^8.14.0",

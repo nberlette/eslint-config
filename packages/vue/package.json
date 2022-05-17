@@ -14,6 +14,23 @@
   "files": [
     "index.js"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nberlette/eslint-config",
+    "directory": "packages/vue"
+  },
+  "homepage": "https://github.com/nberlette/eslint-config",
+  "readme": "https://github.com/nberlette/eslint-config#readme",
+  "bugs": "http://github.com/nberlette/eslint-config/issues",
+  "description": "Versatile ESLint presets for Vue projects.",
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "brlt",
+    "react",
+    "vue",
+    "typescript"
+  ],
   "peerDependencies": {
     "eslint": ">=7.4.0"
   },
