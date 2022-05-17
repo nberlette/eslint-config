@@ -324,6 +324,6 @@ module.exports = {
     // brlt
     'brlt/if-newline': 'error',
     'brlt/import-dedupe': 'error',
-    'brlt/prefer-inline-type-import': 'warning'
+    'brlt/prefer-inline-type-import': 'warn'
   },
 }
